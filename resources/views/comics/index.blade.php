@@ -45,7 +45,14 @@
                             <td>{{ $comic->type }}</td>
                             <td>
                                 <a class="btn btn-primary btn-sm" href="{{ route('comics.edit', $comic) }}" >Edit</a>
-                                <a class="btn btn-secondary btn-sm" href="#" >Delete</a>
+                                
+                                <form action="{{ route('comics.destroy', $comic) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+
+                                    <input class="btn btn-secondary btn-sm" type="submit" value="Delete">
+                                </form>
+                                
                             </td>
                         </tr>
                     @empty

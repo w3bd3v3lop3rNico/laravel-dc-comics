@@ -33,6 +33,7 @@ class ComicController extends Controller
     {
         $data = $request->all();
         dd($data);
+        
     }
 
     /**

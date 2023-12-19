@@ -2,7 +2,7 @@
     <nav class="container">
         <ul class="list-unstyled d-flex justify-content-around">
             <li>
-                <a href="{{ url('comics') }}">Home</a>
+                <a href="{{ route('comics.index') }}">Home</a>
             </li>
             <li>
                 <a href="#">About Us</a>

@@ -29,7 +29,7 @@
 
                                 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
                                     <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasTopLabel">Description</h5>
+                                        <h5 class="offcanvas-title" id="offcanvasTopLabel">{{ $comic->title }}</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
@@ -39,7 +39,7 @@
                                 
                             </td>
                             <td><img src="{{ $comic->thumb }}" alt="" width="100px"></td>
-                            <td>{{ $comic->price }}</td>
+                            <td> ${{ $comic->price }}</td>
                             <td>{{ $comic->series }}</td>
                             <td>{{ $comic->sale_date }}</td>
                             <td>{{ $comic->type }}</td>

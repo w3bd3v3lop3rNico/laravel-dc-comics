@@ -16,9 +16,9 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description')->nullable();
-            $table->text('thumb');
+            $table->text('thumb')->nullable();
             $table->decimal('price',10,2)->default(0);
-            $table->string('series');
+            $table->string('series')->default('no series');
             $table->string('sale_date');
             $table->string('type');
             // $table->string('artists');
